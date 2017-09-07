@@ -9,7 +9,7 @@
 require 'database.php';
 $id = 0;
 
-if (!empty($_GET['id'])) {
+if (!empty($_GET['id']) && !empty($_GET['author']) && !empty($_GET['title'])) {
     $id = $_REQUEST['id'];
     $author = $_REQUEST['author'];
     $title = $_REQUEST['title'];
